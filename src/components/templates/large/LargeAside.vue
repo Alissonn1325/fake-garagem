@@ -18,6 +18,19 @@ import LogoTitle from '@/components/templates/LogoTitle.vue';
       <router-link to="/">
         <i class="icon mdi mdi-cart-outline" /> Carrinho
       </router-link>
+      <router-link to="/acessorios">
+        <i class="icon mdi mdi-cart-outline" /> Acessorios
+      </router-link>
+      <router-link to="/categorias">
+        <i class="icon mdi mdi-cart-outline" /> Categorias
+      </router-link>
+        <router-link to="/cor">
+        <i class="icon mdi mdi-cart-outline" /> Cores
+      </router-link>
+        <router-link to="/Marcas">
+        <i class="icon mdi mdi-cart-outline" /> Marcas
+      </router-link>
+    
       <router-link to="/login">
         <i class="icon mdi mdi-account" /> Login
       </router-link>
