@@ -10,25 +10,33 @@ onBeforeRouteUpdate(() => {
 </script>
 <template>
   <div id="footerMenu" :style="{ display: showMenu ? 'block' : 'none' }">
-    <RouterLink to="/">
-      <i class="mdi mdi-home-outline" />
-      Home
-    </RouterLink>
     <RouterLink to="/login">
       <i class="mdi mdi-account" />
       Login
     </RouterLink>
+    <router-link to="/acessorios">
+        <i class="icon mdi mdi-tools" /> Acessorios
+      </router-link>
+      <router-link to="/categorias">
+        <i class="icon mdi mdi-car-pickup" /> Categorias
+      </router-link>
+        <router-link to="/cor">
+        <i class="icon mdi mdi-brush" /> Cores
+      </router-link>
+        <router-link to="/Marcas">
+        <i class="icon mdi mdi-wikipedia" /> Marcas
+      </router-link>
   </div>
   <div class="icons">
     <RouterLink to="/">
       <i class="mdi mdi-home-outline" />
       Home
     </RouterLink>
-    <RouterLink to="/">
+    <RouterLink to="/perfil">
       <i class="mdi mdi-account-circle-outline" />
       Perfil
     </RouterLink>
-    <RouterLink to="/">
+    <RouterLink to="/productadd">
       <i class="mdi mdi-cart-outline" />
       Carrinho
     </RouterLink>
@@ -45,7 +53,7 @@ onBeforeRouteUpdate(() => {
     bottom: 15%;
     right: 0;
 
-    width: 20%;
+    width: 100%;
     border-top: #EEEEEE 1px solid;
     background-color: white;
 
@@ -56,10 +64,10 @@ onBeforeRouteUpdate(() => {
 #footerMenu a {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+
     text-decoration: none;
-    color: #282828;
-    font-size: 1rem;
+    color: #000000;
+    font-size: 20px;
     transition: color 0.3s;
 }
 

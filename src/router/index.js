@@ -1,12 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
-import LayoutLarge from '@/layouts/LayoutLarge.vue';
+import LayoutFull from '@/layouts/LayoutFull.vue';
 import CategoriaView from "../views/CategoriaView.vue";
 import AcessorioView from "../views/AcessorioView.vue";
 import CorView from "../views/CorView.vue";
 import MarcaView from "../views/MarcaView.vue";
 import LoginView from "../views/LoginView.vue";
 import LogoutView from "../views/LogoutView.vue";
+import ProductAddVue from '@/views/ProductAdd.vue';
+import PerfilViewVue from '@/views/PerfilView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,7 +16,7 @@ const router = createRouter({
     {
       path: '/',
       name: '',
-      component: LayoutLarge,
+      component: LayoutFull,
       children: [
         {
           path: '',
@@ -22,9 +24,9 @@ const router = createRouter({
           component: HomeView,
         },
         {
-          path: '/produtos/adicionar',
-          name: 'ProductAdd',
-          component: () => import('@/views/ProductAdd.vue'),
+          path: '/productadd',
+          name: 'productadd',
+          component: ProductAddVue,
         },
         {
           path: '/login',
@@ -60,6 +62,11 @@ const router = createRouter({
           path: "/logout",
           name: "logout",
           component: LogoutView,
+        },
+        {
+          path: "/perfil",
+          name: "perfil",
+          component: PerfilViewVue,
         }
       ],
     },

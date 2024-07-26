@@ -9,34 +9,32 @@ import LogoTitle from '@/components/templates/LogoTitle.vue';
       <router-link to="/">
         <i class="icon mdi mdi-home-outline" /> Home
       </router-link>
-    </div>
-    <div class="divider" />
-    <div class="menu">
-      <router-link to="/">
-        <i class="icon mdi mdi-account-circle-outline" /> Perfil
-      </router-link>
-      <router-link to="/">
-        <i class="icon mdi mdi-cart-outline" /> Carrinho
-      </router-link>
-      <router-link to="/acessorios">
-        <i class="icon mdi mdi-cart-outline" /> Acessorios
-      </router-link>
-      <router-link to="/categorias">
-        <i class="icon mdi mdi-cart-outline" /> Categorias
-      </router-link>
-        <router-link to="/cor">
-        <i class="icon mdi mdi-cart-outline" /> Cores
-      </router-link>
-        <router-link to="/Marcas">
-        <i class="icon mdi mdi-cart-outline" /> Marcas
-      </router-link>
-    
       <router-link to="/login">
         <i class="icon mdi mdi-account" /> Login
       </router-link>
     </div>
+    <div class="divider"/>
+    <div class="menu">
+      <router-link to="/perfil">
+        <i class="icon mdi mdi-account-circle-outline" /> Perfil
+      </router-link>
+      <router-link to="/productadd">
+        <i class="icon mdi mdi-cart-outline" /> Carrinho
+      </router-link>
+      <router-link to="/acessorios">
+        <i class="icon mdi mdi-tools" /> Acessorios
+      </router-link>
+      <router-link to="/categorias">
+        <i class="icon mdi mdi-car-pickup" /> Categorias
+      </router-link>
+        <router-link to="/cor">
+        <i class="icon mdi mdi-brush" /> Cores
+      </router-link>
+        <router-link to="/Marcas">
+        <i class="icon mdi mdi-wikipedia" /> Marcas
+      </router-link>
+    </div>
   </div>
-  <logo-title />
 </template>
 <style scoped>
 .mb-2 {

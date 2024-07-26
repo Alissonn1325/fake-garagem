@@ -5,11 +5,11 @@
     <RouterLink to="/">Contact Us</RouterLink>
     <RouterLink to="/">Privacy & Terms</RouterLink>
   </div>
-  <div class="icons">
+  <!-- <div class="icons">
     <i class="mdi mdi-facebook" />
     <i class="mdi mdi-twitter" />
     <i class="mdi mdi-instagram" />
-  </div>
+  </div> -->
 </template>
 <style scoped>
 .links {

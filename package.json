@@ -16,7 +16,7 @@
     "@passageidentity/passage-elements": "^1.21.6",
     "axios": "^1.7.2",
     "pinia": "^2.1.7",
-    "vite-plugin-pwa": "^0.20.0",
+    "vite-plugin-pwa": "^0.20.1",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3",
     "workbox-precaching": "^7.1.0"
