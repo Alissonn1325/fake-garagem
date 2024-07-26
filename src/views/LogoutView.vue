@@ -13,7 +13,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <h1>Logging out..</h1>
+  <h1>Logged Out</h1>
 </template>
 
 <style></style>
